@@ -1,6 +1,6 @@
 {
   "name": "mcp-server-trustcar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for trustcar.info — look up a Ukrainian licence plate: region, vehicle make/model/year, community rating and recent driver reviews.",
   "keywords": [
     "mcp",
