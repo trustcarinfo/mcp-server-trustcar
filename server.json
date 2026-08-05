@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.trustcarinfo/plate-lookup",
+  "description": "Ukrainian license-plate and vehicle lookups: registry data, photos and reviews (trustcar.info).",
+  "repository": {
+    "url": "https://github.com/trustcarinfo/mcp-server-trustcar",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "mcp-server-trustcar",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://trustcar.info/mcp"
+    }
+  ]
+}
