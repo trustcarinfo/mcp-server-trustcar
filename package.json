@@ -1,0 +1,44 @@
+{
+  "name": "mcp-server-trustcar",
+  "version": "1.0.0",
+  "description": "MCP server for trustcar.info — look up a Ukrainian licence plate: region, vehicle make/model/year, community rating and recent driver reviews.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "licence-plate",
+    "license-plate",
+    "vehicle-lookup",
+    "ukraine",
+    "trustcar"
+  ],
+  "license": "MIT",
+  "author": "trustcar.info",
+  "homepage": "https://trustcar.info",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustcarinfo/mcp-server-trustcar.git"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-server-trustcar": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', 0o755)\"",
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
